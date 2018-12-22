@@ -26,11 +26,17 @@ var A=document.getElementById("IN1").value;
 var B=document.getElementById("IN2").value;
 document.getElementById("inf1").innerHTML =Number(A)/Number(B);
 }
+function ost(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)%Number(B);
+}
 </script>
 <button onclick="plus()">+</button>
 <button onclick="minus()">-</button>
 <button onclick="proizv()">*</button>
 <button onclick="chast()">/</button>
+<button onclick="ost()">/(c остатком)</button>
 <br>
 <br>
 <input type="text" value="box1" id="IN1">
