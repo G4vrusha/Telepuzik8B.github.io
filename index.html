@@ -6,17 +6,39 @@ content="text/html; charset=windows-1251">
 </head>
 <body>
 <script>
-function er(){
-alert (document.getElementById("out").value);
-document.getElementById("out").value=document.getElementById("in").value;
+function plus(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)+Number(B);
+}
+function minus(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)-Number(B);
+}
+function proizv(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)*Number(B);
+}
+function chast(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)/Number(B);
 }
 </script>
-<button onclick="er()">agaga!</button>
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="proizv()">*</button>
+<button onclick="chast()">/</button>
 <br>
 <br>
-<input type="text" value="box1" id="in">
+<input type="text" value="box1" id="IN1">
 <br>
 <br>
-<input type="text" value="box2" id="out">
+<input type="text" value="box2" id="IN2">
+<br>
+<br>
+<div id="inf1"></div>
 </body>
 </html>
