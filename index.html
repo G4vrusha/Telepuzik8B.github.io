@@ -31,18 +31,42 @@ var A=document.getElementById("IN1").value;
 var B=document.getElementById("IN2").value;
 document.getElementById("inf1").innerHTML =Number(A)%Number(B);
 }
+function sravni(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+var C=document.getElementById("IN3").value;
+if (Number(A)%Number(C)>Number(B)%Number(C)) {
+  document.getElementById("inf1").innerHTML ="больше";
+} else {
+  document.getElementById("inf1").innerHTML ="меньше";
+}
+function nod (){
+    var A=Number(document.getElementById("IN1").value);
+var B=Number(document.getElementById("IN2").value);
+  while (A !=B) 
+    if (A>B){
+    A=A-B}
+  
+  else{ B=B-A}}
+document.getElementById("inf1").innerHTML = A;
+}
 </script>
 <button onclick="plus()">+</button>
 <button onclick="minus()">-</button>
 <button onclick="proizv()">*</button>
 <button onclick="chast()">/</button>
-<button onclick="ost()">/(c остатком)</button>
+<button onclick="ost()">%</button>
+<button onclick="sravni()">Сравнение остатков</button>
+<button onclick="nod()">НОД</button>
 <br>
 <br>
 <input type="text" value="box1" id="IN1">
 <br>
 <br>
 <input type="text" value="box2" id="IN2">
+<br>
+<br>
+<input type="text" value="box3" id="IN3">
 <br>
 <br>
 <div id="inf1"></div>
