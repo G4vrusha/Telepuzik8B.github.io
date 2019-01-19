@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type"
+
+content="text/html; charset=windows-1251">
+
+<title>Стили</title>
+
+</head>
+
+<body>
+
+<script>
+
+function er(){
+
+
+
+var start = 100;
+
+var result = [];
+
+while (start >= 0) {
+
+    result.push(1);
+
+    start--;
+
+}
+
+alert(result);
+
+document.getElementById("inf1").innerHTML=result;
+
+}
+
+</script>
+
+<button onclick="er()">agaga!</button>
+
+<br>
+
+
+
+
+
+<div id="inf1"></div>
+
+</body>
+
+</html>
