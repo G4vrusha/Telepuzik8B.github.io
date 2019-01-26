@@ -6,24 +6,117 @@ content="text/html; charset=windows-1251">
 </head>
 <body>
 <script>
-function er(){
-var start;
-var a=0;
-var b=100;
-start = a;
-var result = [];
-while (start < b) {  a=a+2  ;
-    result.push(a);
-    start++;}
-alert(result);
-document.getElementById("inf1").innerHTML=result;
+function err(){
+var err = [37,0,50,46,34,46,0,13];
+document.getElementById("inf1").innerHTML=err;
+}
+
+
+function errr(){
+var A =document.getElementById("IN1").value;
+
+var B =document.getElementById("IN2").value;
+
+var C =document.getElementById("IN3").value;
+
+var D =document.getElementById("IN4").value;
+
+var E =document.getElementById("IN5").value;
+
+var F =document.getElementById("IN6").value;
+
+var G =document.getElementById("IN7").value;
+
+var I =document.getElementById("IN8").value;
+
+var J =document.getElementById("IN9").value;
+
+var K =document.getElementById("IN10").value;
+
+var err = [ A , B , C , D , E , F , G , I , J , K ];
+
+document.getElementById("inf2").innerHTML=err;
 }
 </script>
-<button onclick="er()">agaga!</button>
+
 <br>
 
+<br>
 
+<input type="text" value="box1" id="IN1">
+
+<br>
+
+<br>
+
+<input type="text" value="box2" id="IN2">
+
+<br>
+
+<br>
+
+<input type="text" value="box3" id="IN3">
+
+<br>
+
+<br>
+
+<input type="text" value="box4" id="IN4">
+
+<br>
+
+<br>
+
+<input type="text" value="box5" id="IN5">
+
+<br>
+
+<br>
+
+<input type="text" value="box6" id="IN6">
+
+<br>
+
+<br>
+
+<input type="text" value="box7" id="IN7">
+
+<br>
+
+<br>
+
+<input type="text" value="box8" id="IN8">
+
+<br>
+
+<br>
+
+<input type="text" value="box9" id="IN9">
+
+<br>
+
+<br>
+
+<input type="text" value="box10" id="IN10">
+
+<br>
+
+<br>
+
+<button onclick="err()">11.1</button>
+
+<br>
+
+<br>
+
+<button onclick="errr()">11.2</button>
+<br>
+
+<br>
 <div id="inf1"></div>
+
+<div id="inf2"></div>
+
 </body>
 
 </html>
