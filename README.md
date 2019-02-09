@@ -11,7 +11,6 @@ var arr=['15'];
 min=0;
 max=1;
 function er2(){
-
 b=0
   while (b <= 15) {  
   arr[b]=min + (Math.random() * ( max - min));
@@ -19,28 +18,14 @@ b=0
 }
 A++;
 change_number()
-
-
 document.getElementById("inf1").innerHTML=document.getElementById("inf1").innerHTML+" Элемент"+(A-1)+ " "+arr[A-1]+"<br>";
 }
-
 function change_number(){
 document.getElementById("inf2").innerHTML="Задайте "+ A+"ый элемент массива"+'<input type="text" value="a" id="mark">'};
-
-
 function er1(){
 var fruits = ["A","B","C","D","E","F","G","H","I","J"];
 document.getElementById("inf1").innerHTML=fruits;
 }
-
-
-
-  
-  
-  
-  
-  
-
 </script>
 <button onclick="er1()">11.1!</button>
 <br>
