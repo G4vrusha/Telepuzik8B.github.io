@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      document.getElementById("otvet1").innerHTML = "";
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 0;
+      var min = 0;
+      var max = 2;
+      var arr = [''];
+      var z = 0
+      var o = 0
+      var t = 0
+      while (i < n) {
+        arr[i] = Math.round(min + Math.random() * (max - min));
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + arr[i] + " ";
+        if (arr[i] == 1) {
+          o++;
+        }
+        if (arr[i] == 0) {
+          z++;
+        }
+        if (arr[i] == 2) {
+          t++;
+
+        }
+        i++;
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + "<br>" + o + "         " + z + " " + ;
+      }
+    }
+  </script>
+</head>
+<body>
+<h1>Цикл while!</h1> n=
+  <input type="text" value="6" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
